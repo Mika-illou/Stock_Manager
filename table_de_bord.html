@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table_de_bord.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Table de Bord</title>
+</head>
+<body>
+    <section class="entete">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">&#9776;</label>
+        <header class="header">
+            <h2>Gestion de Stock - Produit Electronniques</h2>
+            <div class="bitum">
+                <div class="notif">
+                    <div class="notif_1"><i class="fa-solid fa-bell"></i></div>
+                    <div class="notif_2">3</div>
+                </div>
+                <div class="admin">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p class="text"> Administrateur</p>
+                </div>
+            </div>    
+        </header>
+        
+
+        <aside class="sidebar">
+            <nav class="navbar">
+                <div class="haut">
+                    <div class="haut_icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h1>Dashboard<h1>
+                </div>
+                <hr>
+                <ul>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-etch fa-solid fa-gauge"></i></i>
+                        </div>
+                        <li><a href="table_de_bord.html">Tableau de bord</a></li>
+                    </div class="menu">
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <li><a href="analytic.html">Analytics</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <li><a href="commande.html">Commandes</a></li>
+                    </div>
+                     <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <li><a href="parametre.html">Paramètres</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-bar"></i>
+                        </div>
+                         <li><a href="rapport.html">Rapports</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            </a><i class="fa-solid fa-bell"></i>
+                        </div>
+                        <li><a href="notification.html">Notifications</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <hr>
+                <div class="nav_bas">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="div_1">
+                        <h2>Administrateur</h2>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+                <a href="#mika" id="close">
+                    <div class="profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="div_1">
+                            <h2>Mon Profil</h2>
+                        </div>
+                    </div>
+                </a>
+                 <a href="index.html">
+                    <div class="Deconnexion">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <div class="div_1">
+                            <h2>Deconnexion</h2>
+                        </div>
+                    </div>
+                </a>
+
+            </nav>   
+        </aside> 
+    </section>
+
+    <section class="main_principal">
+
+         <div class="titre_table_de_bord">
+            <h1>Tableau de Bord Principal</h1>
+            <p class="p_table">Gestion des stocks de produits électroniques</p>
+        </div>
+        <div class="gestion_produit">
+            <div class="carte">
+                <div class="icoin1"><i class="fa-solid fa-boxes-stacked"></i></div>
+                <div class="carte1">
+                    <p class="span_num">1,234</p>
+                    <p>Produits en Stock</p>
+                </div>
+            </div>
+
+            <div class="carte">
+                <div class="icoin2"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="carte1">
+                    <p class="span_num">23</p>
+                    <p>Stock faible</p>
+                </div>
+            </div>
+
+            <div class="carte">
+                <div class="icoin3"><i class="fa-solid fa-euro-sign"></i></div>
+                <div class="carte1">
+                    <p class="span_num">€45,678</p>
+                    <p>Valeur Totale</p>
+                </div>
+            </div>
+
+            <div class="carte">
+                <div class="icoin4"><i class="fa-solid fa-truck"></i></div>
+                <div class="carte1">
+                    <p class="span_num">12</p>
+                    <p>Commandes en Attente</p>
+                </div>
+            </div>
+        </div>
+
+
+            <table class="tableau1">
+                <thead>
+                    <tr class="titre_tableau">
+                        <td>
+                            <h2>Gestion des Stocks</h2>
+                        </td>
+                        <td><input type="text" placeholder="🔍  Rechercher un produit..."></td>
+                        <td>
+                            <div class="ajout_produit">
+                                <div class="ajout">
+                                    <p>+ Ajouter Produit</p>
+                                </div>
+                                <div class="export">
+                                    <i class="fa-solid fa-download"></i>
+                                    <p>exporter</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+
+        <div class="gestion_stocks">
+
+            <table class="tableau2">
+                <thead>
+                    <tr class="entete_colonne">
+                        <th class="colonne1">ID</th>
+                        <th class="colonne2">PRODUIT</th>
+                        <th class="colonne3">CATÉGORIE</th>
+                        <th class="colonne4">STOCK</th>
+                        <th class="colonne5">PRIX</th>
+                        <th class="colonne6">STATUS</th>
+                        <th class="colonne7">ACTIONS</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>
+                            <div class="ID_dollar"> #001</div>
+                        </th>
+                        <th>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-laptop"></i></div>
+                                <div class="carte1">
+                                    <h3>MacBook Pro 16"</h3>
+                                    <h4>Apple - M3 Pro</h4>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="LAPTOP">
+                                LAPTOP
+                            </div>
+                        </th>
+                        <th>
+                            <div class="P15">15</div>
+                        </th>
+                        <th>
+                            <div class="ID_dollar"> €2,899</div>
+                        </th>
+                        <th>
+                            <div class="actif">Actif</div>
+                        </th>
+                        <th>
+                            <div class="carte2">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa-solid fa-trash"></i></div>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <div class="ID_dollar"> #002</div>
+                        </th>
+                        <th>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="carte1">
+                                    <h3>iPhone 15 Pro</h3>
+                                    <h4>Apple - 128GB</h4>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="SMARTPHONE">
+                                SMARTPHONE
+                            </div>
+                        </th>
+                        <th>
+                            <div class="P8">8</div>
+                        </th>
+                        <th>
+                            <div class="ID_dollar"> €1,199</div>
+                        </th>
+                        <th>
+                            <div class="actif">Actif</div>
+                        </th>
+                        <th>
+                            <div class="carte2">
+                                <div class="ico2"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div class="ico2"><i class="fa-solid fa-trash"></i></div>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <div class="ID_dollar"> #003</div>
+                        </th>
+                        <th>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-headphones"></i></div>
+                                <div class="carte1">
+                                    <h3>MAirPods Pro 2</h3>
+                                    <h4>Apple - USB-C</h4>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="AUDIO">
+                                <h4>AUDIO</h4>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="P3">3</div>
+                        </th>
+                        <th>
+                            <div class="ID_dollar"> €279</div>
+                        </th>
+                        <th>
+                            <div class="faible1">Stock Faible</div>
+                        </th>
+                        <th>
+                            <div class="carte2">
+                                <div class="ico2"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div class="ico2"><i class="fa-solid fa-trash"></i></div>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <div class="ID_dollar"> #004</div>
+                        </th>
+                        <th>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-tablet-screen-button"></i></div>
+                                <div class="carte1">
+                                    <h3>iPad Air</h3>
+                                    <h4>Apple - 64GB</h4>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="TABLETTE">
+                                <h4>TABLETTE</h4>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="P15">22</div>
+                        </th>
+                        <th>
+                            <div class="ID_dollar"> €649</div>
+                        </th>
+                        <th>
+                            <div class="actif">Actif</div>
+                        </th>
+                        <th>
+                            <div class="carte2">
+                                <div class="ico2"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div class="ico2"><i class="fa-solid fa-trash"></i></div>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <div class="ID_dollar"> #005</div>
+                        </th>
+                        <th>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-tv"></i></div>
+                                <div class="carte1">
+                                    <h3>Apple TV 4K</h3>
+                                    <h4>128GB - WiFi</h4>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="TV">
+                                <h4>TV</h4>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="P8">12</div>
+                        </th>
+                        <th>
+                            <div class="ID_dollar"> €179</div>
+                        </th>
+                        <th>
+                            <div class="actif">Actif</div>
+                        </th>
+                        <th>
+                            <div class="carte2">
+                                <div class="ico2"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div class="ico2"><i class="fa-solid fa-trash"></i></div>
+                            </div>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="profil_lien" id="mika" id="close">
+        <div class="mon_profile">
+            <div class="card_users">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+                 <a href="#close">
+                    <div class="icoin_fermer">
+                    <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photo">
+                <div class="ron_im">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="changer">
+                    <h3>Changer la Photo</h3>
+                </div>
+            </div>
+
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Nom : </label><br>
+                    <input type="text" placeholder="  Administrateur" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Prénom : </label><br>
+                    <input type="text" placeholder="  Jean" class="Nom">
+                </div>
+            </div>
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Email : </label><br>
+                    <input type="email" placeholder="  admin@dashboard.com" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Téléphone : </label><br>
+                    <input type="text" placeholder="+33 6 12 34 56 78" class="Nom">
+                </div>
+            </div>
+
+            <div class="role">
+                <div>
+                    <label for="Toutes">Role : </label><br>
+                    <input type="text" placeholder="  Gestionnaire" class="role1">
+                </div>
+                <div>
+                    <label for="Toutes">Derniere connexion : </label><br>
+                    <input type="text" placeholder="  15 Janvier 2024 à 14:30" class="role1">
+                </div>
+            </div>
+
+            <div class="enregistrer">
+                <div class="close">
+                    <p> Fermer</p>
+                </div>
+
+                <div class="sauve">
+                    <p>Sauvegarder</p>
+                </div>
+
+            </div>
+    </div>
+
+
+    </section>
+</body>
+</html>

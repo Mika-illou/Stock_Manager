@@ -1,0 +1,589 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F9FAFC;
+    width: 100%;
+    height: 100vh;
+}
+.entete{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 88%;
+    height: 80px;
+    margin-left: 13%;
+    padding: 30px;
+    position: fixed;
+    color: black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+}
+.text {
+    font-size: 20px;
+}
+.notif_1{
+    position: relative;
+}
+.notif_1 i{
+    font-size: 1.5rem;
+
+}
+.notif_2{
+    background-color: red;
+    border-radius: 60px;
+    color: black;
+    width: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 7px;
+}
+
+.sidebar{
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    height: 100vh;
+    background-color: #1F2E43;
+    position: fixed;
+}
+span{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.bitum{
+    display: flex;
+    gap: 20px;
+}
+.notif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.admin i{
+    color: #6E7F94;
+    font-size: 20px;
+}
+.admin{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.haut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.haut_icon{
+    font-size: 30px;
+    color: blue;
+}
+.menu{
+    display: flex;
+    gap: 10px;
+}
+.menu:hover{
+    background-color: #266FED;
+    cursor: pointer;
+}
+ul{
+    margin-top: 30px;
+    color: white;
+    list-style: none;
+    line-height: 40px;
+    
+}
+ul a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+    color: white;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    gap: 20px;
+    height: 250px;
+}
+
+.nav_bas{
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    width: 220px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #303846;
+    padding: 10px;
+}
+
+.nav_bas i {
+    font-size: 30px;
+    color: #266FED;
+}
+
+.profil{
+    display: flex;
+    justify-content: start;
+    height: 50px;
+    width: 170px;
+    font-size: 14px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #303846;
+    padding: 10px;
+}
+.profil i{
+    font-size: 20px;
+}
+
+.Deconnexion{
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #3C2734;
+    padding: 10px;
+}
+.Deconnexion i{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* Bouton du menu */
+.menu-btn {
+  display: none;
+  font-size: 35px;
+  color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: -7px;
+  left:-25px;
+  z-index: 2;
+  margin-left: 2px;
+}
+/* On cache la checkbox */
+#menu-toggle {
+  display: none;
+}
+hr{
+    color: white;
+    width: 100%;
+}
+
+
+
+
+
+.main_principal{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 14%;
+    background-color: #F9FAFC;
+    padding-right: 25px;
+}
+.titre_rapport p{
+    color: #8A8A9B;
+    margin-top: 15px;
+}
+.defiler{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    margin-top: 20px;
+    gap: 30px;
+    padding-left: 25px;
+}
+.classe select{
+    width: 160px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.generer{
+    display: flex;
+    width: 160px;
+    height: 30px;
+    background-color: #266FED;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.classe{
+    line-height: 2;
+}
+.gestion_de_vente{
+    display: flex;
+    gap: 30px;
+
+}
+.distribution{
+    display: flex;
+    width: 800px;
+    align-items: start;
+    height: 200px;
+    gap: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.distribution:hover{
+    transform: translate(1.2px);
+    cursor: pointer;
+}
+.distribue{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nombre{
+    display: flex;
+    gap: 20px;
+}
+.distribution i{
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+    
+}
+.detail{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+}
+.nombre_1{
+    line-height: 1.5;
+}
+.nombre_1 h3{
+    color: #266FED;
+    font-weight: 700;
+}
+.cadre_parametre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
+    margin-top: 30px;
+    padding-inline: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+   
+}
+.historique{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+   
+}
+.table_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color:#EFEFEF;
+    margin-top: 50px;
+    padding-inline: 25px;
+
+}
+.table_1:hover{
+    transform: translate(1.2px);
+    cursor: pointer;
+    background-color: rgb(238, 233, 233);
+}
+.table_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    padding-inline: 25px;
+    margin-top: 2px;
+}
+.table_2:hover{
+    transform: translate(1.2px);
+    cursor: pointer;
+    background-color: rgb(238, 233, 233);
+}
+.histo_1{
+    display: flex;
+    gap: 10px;
+}
+
+.profil_lien{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    /* background-color: #fafafb; */
+    position:absolute;
+    position: fixed;
+    backdrop-filter: blur(3px);
+}
+
+.mon_profile{
+    width: 500px;
+    height: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#mika:target{
+    left: 0;
+}
+.card_users{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    gap: 5px;
+    padding-inline: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    margin-bottom: 50px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   
+}
+.user i{
+    font-size: 1.3rem;
+}
+.photo i{
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+.changer{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    border-radius: 9px;
+    background-color:#D8D8D8;
+}
+.input_inscrire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    margin-top: 30px;
+    line-height: 2;
+}
+.input_inscrire input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+.role{
+    padding-inline: 20px;
+    margin-top: 20px;
+    line-height: 2;
+ 
+}
+.role input{
+     width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding-right: 10px;
+
+}
+.enregistrer{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding-inline: 20px;
+    margin-top: 30px;
+}
+.enregistrer .sauve{
+    width: 100px;
+    height: 35px;;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.enregistrer .close{
+    width: 100px;
+    height: 35px;;
+    color: white;
+    background-color:#D8D8D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: black;
+}
+.role1{
+    padding-right: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header{
+        width: 100%;
+        margin-left: 0;
+    }
+    .sidebar{
+        left: -100%;
+        width: 250px;
+        padding-left: 10px;
+    }
+    .main_principal{
+        padding-left: 18px;
+    }
+
+ #menu-toggle:checked ~ .sidebar {
+    transform: translateX(0);
+    left: 0;
+  }
+
+  /* Le bouton s’affiche sur mobile */
+  .menu-btn {
+    display: block;
+    position: fixed;
+  }
+  .defiler{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 400px;
+    padding-top: 15px;
+  }
+  .defiler select{
+    width: 680px;
+    height: 40px;
+  }
+   .defiler .icon_generer .generer{
+    width: 680px;
+    height: 40px;
+
+  }
+  .distribution{
+    width: 725px;
+
+  }
+  .gestion_de_vente{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .haut{
+    padding-top: 50px;
+    justify-content: start;
+  }
+
+
+    
+}
+
+

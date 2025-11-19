@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="analytic.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <section class="entete">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">&#9776;</label>
+        <header class="header">
+            <h2>Gestion de Stock - Produit Electronniques</h2>
+            <div class="bitum">
+                <div class="notif">
+                    <div class="notif_1"><i class="fa-solid fa-bell"></i></div>
+                    <div class="notif_2">3</div>
+                </div>
+                <div class="admin">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p class="text"> Administrateur</p>
+                </div>
+            </div>    
+        </header>
+        
+
+        <aside class="sidebar">
+            <nav class="navbar">
+                <div class="haut">
+                    <div class="haut_icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span>Dashboard</span>
+                </div>
+                <hr>
+                <ul>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-etch fa-solid fa-gauge"></i></i>
+                        </div>
+                        <li><a href="table_de_bord.html">Tableau de bord</a></li>
+                    </div class="menu">
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <li><a href="analytic.html">Analytics</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <li><a href="commande.html">Commandes</a></li>
+                    </div>
+                     <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <li><a href="parametre.html">Paramètres</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-bar"></i>
+                        </div>
+                         <li><a href="rapport.html">Rapports</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            </a><i class="fa-solid fa-bell"></i>
+                        </div>
+                        <li><a href="notification.html">Notifications</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <hr>
+                <div class="nav_bas">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="div_1">
+                        <h2>Administrateur</h2>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+                <a href="#mika" id="close">
+                    <div class="profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="div_1">
+                            <h2>Mon Profil</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="Deconnexion">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <div class="div_1">
+                            <h2>Deconnexion</h2>
+                        </div>
+                    </div>
+                </a>
+
+            </nav>   
+        </aside> 
+    </section>
+
+    <section class="main_principal">
+
+         <div class="titre.analytic">
+            <h1><i class="fa-solid fa-chart-line"></i> Analytics & Rapports</h1>
+            <p text_analytic>Analyse complète des performances et tendances</p>
+        </div>
+
+        <div class="analyse_complete">
+            <div class="analyse">
+                <div class="ico_ana_1"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="analy">
+                    <div class="nombre">
+                        <div class="num_1">
+                            <h3>€45,678</h3>
+                            <p>Chiffre d'affraies</p>
+                        </div>
+                    </div>
+                    <div class="stat_1"> +12.5%</div>
+                </div>
+            </div>
+
+
+            <div class="analyse">
+                <div class="ico_ana_2"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="analy">
+                    <div class="nombre">
+                        <div class="num_1">
+                            <h3>1,234</h3>
+                            <p>Commandes</p>
+                        </div>
+                    </div>
+                    <div class="stat_1"> + 8.2%</div>
+                </div>
+            </div>
+
+            <div class="analyse">
+                <div class="ico_ana_3"><i class="fa-solid fa-users"></i></div>
+                <div class="analy">
+                    <div class="nombre">
+                        <div class="num_1">
+                            <h3>856</h3>
+                            <p>Nouveaux clients</p>
+                        </div>
+                    </div>
+                    <div class="stat_1"> -2.1%</div>
+                </div>
+            </div>
+
+            <div class="analyse">
+                <div class="ico_ana_4"><i class="fa-solid fa-percent"></i></div>
+                <div class="analy">
+                    <div class="nombre">
+                        <div class="num_1">
+                            <h3>3.4%</h3>
+                            <p>Taux de conversion</p>
+                        </div>
+                    </div>
+                    <div class="stat_1"> +0.3%</div>
+                </div>
+            </div>
+        </div>
+        <div class="evolution_vente">
+            <div class="rapport_historique_1">
+                <div class="archive_vente ">
+                    <div class="histoire_vente">
+                        <i class="fa-solid fa-sliders"></i>
+                        <h3>Évolution des Ventes</h3>
+                    </div>
+                    <select name="#" id="">
+                        <option value="">30 derniers jours</option>
+                        <option value="">25</option>
+                        <option value="">20</option>
+                        <option value="">15</option>
+                        <option value="">10</option>
+                        <option value="">05</option>
+                        <option value="">01</option>
+                    </select>
+                </div>
+        
+                <div class="evolution_histogramme">
+                    <div class="histogramme">
+                        <div class="jan"></div>
+                        <div class="mois">
+                            <h4>Jan</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="fev"></div>
+                        <div class="mois">
+                            <h4>Fev</h4>
+                            <p>€1.000</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="mar"></div>
+                        <div class="mois">
+                            <h4>Mar</h4>
+                            <p>€1.000</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="avr"></div>
+                        <div class="mois">
+                            <h4>Avr</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="mai"></div>
+                        <div class="mois">
+                            <h4>Mai</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="jun"></div>
+                        <div class="mois">
+                            <h4>Jui</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="juil"></div>
+                        <div class="mois">
+                            <h4>Juil</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="aut"></div>
+                        <div class="mois">
+                            <h4>Aout</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="sep"></div>
+                        <div class="mois">
+                            <h4>Sep</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="oct"></div>
+                        <div class="mois">
+                            <h4>Ocb</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="nov"></div>
+                        <div class="mois">
+                            <h4>Nov</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                    <div class="histogramme">
+                        <div class="dec"></div>
+                        <div class="mois">
+                            <h4>Dec</h4>
+                            <p>€8,500</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="etiquette">
+                    <div class="etiquette_bleu">
+                        <div class="bleu"></div>
+                        <p>Ventes Réelles</p>
+                    </div>
+                    <div class="etiquette_bleu">
+                        <div class="vert"></div>
+                        <p>Objectifs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rapport_historique_2">
+                <div class="repartition_titre ">
+                    <div class="repartition">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <h3>Évolution des Ventes</h3>
+                    </div>
+                </div>
+                <div class="repartition_1">
+                    <div class="appreil_1">
+                        <h4>Smartphones</h4>
+                        <p>€15,980</p>
+                    </div>
+                    <div class="appreil_2">
+                        <div class="pourcentage"></div>
+                        35%
+                    </div>
+                </div>
+                <div class="repartition_1">
+                    <div class="appreil_1">
+                        <h4>Laptops</h4>
+                        <p>€11,415</p>
+                    </div>
+                    <div class="appreil_2">
+                        <div class="pourcentage"></div>
+                        25%
+                    </div>
+                </div>
+                <div class="repartition_1">
+                    <div class="appreil_1">
+                        <h4>Tablettes</h4>
+                        <p>€9,132</p>
+                    </div>
+                    <div class="appreil_2">
+                        <div class="pourcentage"></div>
+                        20%
+                    </div>
+                </div>
+                <div class="repartition_1">
+                    <div class="appreil_1">
+                        <h4>Accessoires</h4>
+                        <p>€9,132</p>
+                    </div>
+                    <div class="appreil_2">
+                        <div class="pourcentage"></div>
+                        20%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Tableau_rapport">
+
+            <div class="top_produit">
+                <div class="top_produit_1">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Top Produits</h3>
+                </div>
+
+                <div class="top_produit_2">
+                    <select name="#" id="#">
+                        <option value="espagne">Par ventes</option>
+                        <option value="royaume-uni">Par revenus</option>
+                        <option value="canada">par marge</option>
+                    </select>
+
+                </div>
+            </div>
+          
+
+            <table class="classement">
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Produit</th>
+                        <th>Ventes</th>
+                        <th>Revenus</th>
+                        <th>Marge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr_1">
+                        <td>
+                            <div class="Rang">
+                                <h2>1</h2>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="carte1">
+                                    <h3>iPhone 15 Pro</h3>
+                                </div>
+                            </div>
+                        </td>
+                        <td>234</td>
+                        <td>€280,866</td>
+                        <td>€42,130</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Rang_1">
+                                <h2>2</h2>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-laptop"></i></div>
+                                <div class="carte1">
+                                    <h3>MacBook Pro 16"</h3>
+                                </div>
+                            </div>
+                        </td>
+                        <td>89</td>
+                        <td>€257,911</td>
+                        <td>€51,582</td>
+                    </tr>
+                    <tr class="tr_2">
+                        <td>
+                            <div class="Rang_2">
+                                <h2>3</h2>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cards">
+                                <div class="ico"><i class="fa-solid fa-headphones"></i></div>
+                                <div class="carte1">
+                                    <h3>MAirPods Pro 2</h3>
+                                </div>
+                            </div>
+                        </td>
+                        <td>445</td>
+                        <td>€124,155</td>
+                        <td>€18,623</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+     </section>
+
+
+      <section class="profil_lien" id="mika">
+        <div class="mon_profile">
+            <div class="card_users">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+                 <a href="#close">
+                    <div class="icoin_fermer">
+                    <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photo">
+                <div class="ron_im">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="changer">
+                    <h3>Changer la Photo</h3>
+                </div>
+            </div>
+
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Nom : </label><br>
+                    <input type="text" placeholder="  Administrateur" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Prénom : </label><br>
+                    <input type="text" placeholder="  Jean" class="Nom">
+                </div>
+            </div>
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Email : </label><br>
+                    <input type="email" placeholder="  admin@dashboard.com" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Téléphone : </label><br>
+                    <input type="text" placeholder="+33 6 12 34 56 78" class="Nom">
+                </div>
+            </div>
+
+            <div class="role">
+                <div>
+                    <label for="Toutes">Role : </label><br>
+                    <input type="text" placeholder="  Gestionnaire" class="role1">
+                </div>
+                <div>
+                    <label for="Toutes">Derniere connexion : </label><br>
+                    <input type="text" placeholder="  15 Janvier 2024 à 14:30" class="role1">
+                </div>
+            </div>
+
+            <div class="enregistrer">
+                <div class="close">
+                    <p> Fermer</p>
+                </div>
+
+                <div class="sauve">
+                    <p>Sauvegarder</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+</html>

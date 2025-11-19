@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notification.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>notification</title>
+</head>
+<body>
+    <section class="entete">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">&#9776;</label>
+        <header class="header">
+            <h2>Gestion de Stock - Produit Electronniques</h2>
+            <div class="bitum">
+                <div class="notif">
+                    <div class="notif_1"><i class="fa-solid fa-bell"></i></div>
+                    <div class="notif_2">3</div>
+                </div>
+                <div class="admin">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p class="text"> Administrateur</p>
+                </div>
+            </div>    
+        </header>
+        
+
+        <aside class="sidebar">
+            <nav class="navbar">
+                <div class="haut">
+                    <div class="haut_icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span>Dashboard</span>
+                </div>
+                <hr>
+                <ul>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-etch fa-solid fa-gauge"></i></i>
+                        </div>
+                        <li><a href="table_de_bord.html">Tableau de bord</a></li>
+                    </div class="menu">
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <li><a href="analytic.html">Analytics</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <li><a href="commande.html">Commandes</a></li>
+                    </div>
+                     <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <li><a href="parametre.html">Paramètres</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-bar"></i>
+                        </div>
+                         <li><a href="rapport.html">Rapports</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            </a><i class="fa-solid fa-bell"></i>
+                        </div>
+                        <li><a href="notification.html">Notifications</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <hr>
+                <div class="nav_bas">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="div_1">
+                        <h2>Administrateur</h2>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+                <a href="#mika" id="close">
+                    <div class="profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="div_1">
+                            <h2>Mon Profil</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="Deconnexion">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <div class="div_1">
+                            <h2>Deconnexion</h2>
+                        </div>
+                    </div>
+                </a>
+
+            </nav>   
+        </aside> 
+    </section>
+
+    <section class="main_principal">
+        <div class="titre_not_alerte">
+            <h1> <i class="fa-solid fa-bell"></i> Notifications & Alertes</h1>
+            <p>Centre de notifications et gestion des alertes système</p>
+        </div>
+        <div class="cadre_noti">
+            <div class="carte_noti">
+                <div class="icoin_noti_1"><i class="fa-solid fa-envelope"></i></div>
+                <div class="carte_noti_1">
+                    <h2>12</h2>
+                    <p>Non lues</p>
+                </div>
+            </div>
+
+            <div class="carte_noti">
+                <div class="icoin_noti_2"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="carte_noti_1">
+                    <h2>3</h2>
+                    <p>Urgentes</p>
+                </div>
+            </div>
+
+            <div class="carte_noti">
+                <div class="icoin_noti_3"><i class="fa-solid fa-calendar-day"></i></div>
+                <div class="carte_noti_1">
+                    <h2>23</h2>
+                    <p>Aujourd'hui</p>
+                </div>
+            </div>
+
+            <div class="carte_noti">
+                <div class="icoin_noti_4"><i class="fa-solid fa-list"></i></div>
+                <div class="carte_noti_1">
+                    <h2>156</h2>
+                    <p>Total</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection_noti">
+            <div class="classe_noti">
+                <label for="Toutes">Type : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Toutes</option>
+                    <option value="stock">Stock</option>
+                    <option value="commande">Commandes</option>
+                    <option value="système">Système</option>
+                    <option value="securité">Sécurité</option>
+                </select>
+            </div>
+
+            <div class="classe_noti">
+                <label for="Toutes">Priorité : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Toutes</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Haute">Haute</option>
+                    <option value="Moyenne">Moyenne</option>
+                    <option value="basse">Basse</option>
+                </select>
+            </div>
+
+            <div class="classe_noti">
+                <label for="Toutes">Statut : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Toutes</option>
+                    <option value="Non lues">Non lues</option>
+                    <option value="lues">Lues</option>
+                </select>
+            </div>
+            <div class="icoin_fitrer">
+                <p> <i class="fa-solid fa-filter"></i> Filtrer</p>
+            </div>
+        </div>
+       
+        <div class="com_1">
+            <div class="icoin_com_1"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="made_com">
+                <div class="time_com">
+                    <h2>Stock critique détecté</h2>
+                    <p>Il y a 5 minutes</p>
+                </div>
+                <p>Le produit "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer
+                    commande rapidement.</p>
+                <div class="made_pass">
+                    <div class="pass_com_1">
+                        <h3> Passer commande</h3>
+                    </div>
+                    <div class="pass_com_2">
+                        <h3>Marquer comme lue</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="com_2">
+            <div class="icoin_com_2"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="made_com">
+                <div class="time_com">
+                    <h2>Nouvelle commande reçue</h2>
+                    <p>Il y a 15 minutes</p>
+                </div>
+                <p>Commande #CMD-2024-004 reçue de Marie Dubois pour un MacBook Pro 16" (€2,899.00)</p>
+                <div class="made_pass">
+                    <div class="pass_com_3">
+                        <h3> Passer commande</h3>
+                    </div>
+                    <div class="pass_com_4">
+                        <h3>Marquer comme lue</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="com_3">
+            <div class="icoin_com_3"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="made_com">
+                <div class="time_com">
+                    <h2>Commande expédiée</h2>
+                    <p>Il y a 1 heures</p>
+                </div>
+                <p>La commande #CMD-2024-003 a été expédiée avec succès. Numéro de suivi : FR123456789</p>
+                <div class="made_pass">
+                    <div class="pass_com_5">
+                        <h3>Suivre l'envoi</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="com_4">
+            <div class="icoin_com_4"><i class="fa-solid fa-gear"></i></div>
+            <div class="made_com">
+                <div class="time_com">
+                    <h2>Sauvegarde automatique terminée</h2>
+                    <p>Il y a 2 heures</p>
+                </div>
+                <p>Sauvegarde quotidienne des données terminée avec succès. 2.3 GB de données sauvegardées.</p>
+                <div class="made_pass">
+                    <div class="pass_com_6">
+                        <h3>Voir les détails</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="com_5">
+            <div class="icoin_com_5"><i class="fa-solid fa-shield"></i></div>
+            <div class="made_com">
+                <div class="time_com">
+                    <h2>Connexion depuis un nouvel appareil</h2>
+                    <p>Il y a 3 heures</p>
+                </div>
+                <p>Connexion détectée depuis un nouvel appareil (iPhone, Paris, France). Si ce n'est pas vous, changez
+                    votre mot de passe.</p>
+                <div class="made_pass">
+                    <div class="pass_com_7">
+                        <h3> Sécuriser le compte</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="com_6">
+            <div class="selecte_com">
+                <input type="checkbox" class="select_tout">
+                <label for="#">Sélectionner tout: </label>
+            </div>
+            <div class="made_pass">
+                <div class="pass_marque">
+                    <i class="fa-solid fa-check"></i>
+                    <h3>Marquer comme lue</h3>
+                </div>
+                <div class="icoin_supp">
+                    <i class="fa-solid fa-trash"></i>
+                    <h3>Supprimer</h3>
+                </div>
+            </div>
+        </div>
+     </section>
+      <section class="profil_lien" id="mika" id="close">
+        <div class="mon_profile">
+            <div class="card_users">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+                 <a href="#close">
+                    <div class="icoin_fermer">
+                    <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photo">
+                <div class="ron_im">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="changer">
+                    <h3>Changer la Photo</h3>
+                </div>
+            </div>
+
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Nom : </label><br>
+                    <input type="text" placeholder="  Administrateur" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Prénom : </label><br>
+                    <input type="text" placeholder="  Jean" class="Nom">
+                </div>
+            </div>
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Email : </label><br>
+                    <input type="email" placeholder="  admin@dashboard.com" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Téléphone : </label><br>
+                    <input type="text" placeholder="+33 6 12 34 56 78" class="Nom">
+                </div>
+            </div>
+
+            <div class="role">
+                <div>
+                    <label for="Toutes">Role : </label><br>
+                    <input type="text" placeholder="  Gestionnaire" class="role1">
+                </div>
+                <div>
+                    <label for="Toutes">Derniere connexion : </label><br>
+                    <input type="text" placeholder="  15 Janvier 2024 à 14:30" class="role1">
+                </div>
+            </div>
+
+            <div class="enregistrer">
+                <div class="close">
+                    <p> Fermer</p>
+                </div>
+
+                <div class="sauve">
+                    <p>Sauvegarder</p>
+                </div>
+
+            </div>
+    </div>
+
+
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #0b3a65, #0f5b99);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main box */
+.login-box {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 850px;
+    /* max-width: 90%; */
+}
+
+/* Left (form) */
+.left-box {
+    flex: 1;
+    padding: 50px;
+}
+
+.left-box h1 {
+    color: #1d4e89;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.left-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.left-box input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+.left-box input:hover{
+    border-color: #1d4e89;
+}
+
+.options {
+    font-size: 14px;
+    color: #555;
+}
+.btn {
+    background-color: #1d4e89;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50%;
+}
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    background-color: #143a68;
+}
+
+.links {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.links a {
+    color: #1d4e89;
+    text-decoration: none;
+    font-weight:700;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Right (info) */
+.right-box {
+    flex: 1;
+    background: linear-gradient(135deg, #0b3a65, #0f5b99);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    color: #1d4e89;
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.right-box h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.right-box p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Dashord */
+header{
+    display: flex;
+    width: 100%;
+    background-color: #8910aa;
+}
+.navbar {
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+hr{
+    width: 100%;
+    height: 2px;
+    background-color: #1d4e89;
+    border: none;
+    margin: 1rem 0;
+}
+ul{
+    list-style: none;
+    width: 100%;
+    text-decoration: none;
+}
+.titre{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .login-box {
+        width: 700px;
+    }
+    .container{
+        padding-left: 15px;
+    }
+
+}
+@media (max-width: 425px) {
+    .login-box {
+        flex-direction: column;
+        width: 380px;
+    }
+    .container{
+        padding-left: 5px;
+    }
+    .links{
+        font-size: 13px
+
+}
+}
+
+@media (max-width: 375px) {
+    .login-box {
+        width: 300px;
+    }
+    .btn{
+        width: 60%;
+    }
+}

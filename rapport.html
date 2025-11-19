@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rapport.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+   integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>rapport</title>
+</head>
+<body>
+    <section class="entete">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">&#9776;</label>
+        <header class="header">
+            <h2>Gestion de Stock - Produit Electronniques</h2>
+            <div class="bitum">
+                <div class="notif">
+                    <div class="notif_1"><i class="fa-solid fa-bell"></i></div>
+                    <div class="notif_2">3</div>
+                </div>
+                <div class="admin">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p class="text"> Administrateur</p>
+                </div>
+            </div>    
+        </header>
+        
+
+        <aside class="sidebar">
+            <nav class="navbar">
+                <div class="haut">
+                    <div class="haut_icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span>Dashboard</span>
+                </div>
+                <hr>
+                <ul>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-etch fa-solid fa-gauge"></i></i>
+                        </div>
+                        <li><a href="table_de_bord.html">Tableau de bord</a></li>
+                    </div class="menu">
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <li><a href="analytic.html">Analytics</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <li><a href="commande.html">Commandes</a></li>
+                    </div>
+                     <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <li><a href="parametre.html">Paramètres</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            <i class="fa-solid fa-chart-bar"></i>
+                        </div>
+                         <li><a href="rapport.html">Rapports</a></li>
+                    </div>
+                    <div class="menu">
+                        <div class="ul_icon">
+                            </a><i class="fa-solid fa-bell"></i>
+                        </div>
+                        <li><a href="notification.html">Notifications</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <hr>
+                <div class="nav_bas">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="div_1">
+                        <h2>Administrateur</h2>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+                <a href="#mika" id="close">
+                    <div class="profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="div_1">
+                            <h2>Mon Profil</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="Deconnexion">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <div class="div_1">
+                            <h2>Deconnexion</h2>
+                        </div>
+                    </div>
+                </a>
+
+            </nav>   
+        </aside> 
+    </section>
+
+    <section class="main_principal">
+         <div class="titre_rapport">
+            <h1><i class="fa-solid fa-chart-bar"></i> Rapports & Analytics</h1>
+            <p>Génération et consultation des rapports détaillés</p>
+        </div>
+        <div class="defiler">
+            <div class="classe">
+                <label for="#">Type de rapport : </label><br>
+                <select name="#" id="#" class="raport">
+                    <option value="Rapport des ventes">Rapport des ventes</option>
+                    <option value="Rapport de stock">Rapport de stock</option>
+                    <option value="Rapport financier">Rapport financier</option>
+                    <option value="Rapport clients">Rapport clients</option>
+                </select>
+            </div>
+
+            <div class="classe">
+                <label for="#">Période : </label><br>
+                <select name="#" id="#" class="raport">
+                    <option value="Ce mois">Ce mois</option>
+                    <option value="Aujourd'hui">Aujourd'hui</option>
+                    <option value="Cette semaine">Cette semaine</option>
+                    <option value="Ce trimestre">Ce trimestre</option>
+                    <option value="Cette année">Cette année</option>
+                </select>
+            </div>
+
+            <div class="classe">
+                <label for="#">Format : </label><br>
+                <select name="#" id="#" class="raport">
+                    <option value="PDF">PDF</option>
+                    <option value="Excel">Excel</option>
+                    <option value="CSV">CSV</option>
+                </select>
+            </div>
+            <div class="icon_generer">
+                <div class="generer">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <p> Générer le rapport</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gestion_de_vente">
+            <div class="distribution">
+                <div class="icoin_1"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="distribue">
+                    <h2>Ventes du mois</h2>
+                    <div class="nombre">
+                        <div class="nombre_1">
+                            <h3>€45,678</h3>
+                            <p>Chiffre d'affraies</p>
+                        </div>
+
+                        <div class="nombre_1">
+                            <h3>+ 12.5%</h3>
+                            <p>vs mois dernier</p>
+                        </div>
+                    </div>
+                    <div class="detail"> Voir détails</div>
+                </div>
+            </div>
+
+
+            <div class="distribution">
+                <div class="icoin_1"><i class="fa-solid fa-boxes-stacked"></i></div>
+                <div class="distribue">
+                    <h2>État du stock</h2>
+                    <div class="nombre">
+                        <div class="nombre_1">
+                            <h3>1,234</h3>
+                            <p>Articles en stock</p>
+                        </div>
+
+                        <div class="nombre_1">
+                            <h3>23</h3>
+                            <p>Stock Total</p>
+                        </div>
+                    </div>
+                    <div class="detail"> Voir détails</div>
+                </div>
+            </div>
+
+            <div class="distribution">
+                <div class="icoin_1"><i class="fa-solid fa-users"></i></div>
+                <div class="distribue">
+                    <h2>Clients</h2>
+                    <div class="nombre">
+                        <div class="nombre_1">
+                            <h3>856</h3>
+                            <p>Nouveaux clients</p>
+                        </div>
+
+                        <div class="nombre_1">
+                            <h3>2,345</h3>
+                            <p>Total clients</p>
+                        </div>
+                    </div>
+                    <div class="detail"> Voir détails</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cadre_parametre">
+            <div class="historique">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h2>Historique des Rapports</h2>
+            </div>
+            <div class="table_1">
+                <div class="tab_1">Nom du rapport</div>
+                <div class="tab_2">Type</div>
+                <div class="tab_3">Date de génération</div>
+                <div class="tab_4">Statut</div>
+                <div class="tab_5">Actions</div>
+            </div>
+            <div class="table_2">
+                <div class="tab_1">
+                    <div class="histo">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        Rapport_ventes janvier_2024.pdf
+                    </div>
+
+                </div>
+                <div class="tab_2">Ventes</div>
+                <div class="tab_3">15 Jan 2024</div>
+                <div class="tab_4">Terminé</div>
+                <div class="tab_5">
+                    <div class="histo_1">
+                        <div class="icoin_2"><i class="fa-solid fa-download"></i></div>
+                        <div class="icoin_2"><i class="fa-solid fa-trash"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_2">
+                <div class="tab_1">
+                    <div class="histo_2">
+                        <i class="fa-solid fa-file-excel"></i>
+                        Stock_inventaire_janvier_2024.xlsx
+                    </div>
+
+                </div>
+                <div class="tab_2">Stock</div>
+                <div class="tab_3">14 Jan 2024</div>
+                <div class="tab_4">Terminé</div>
+                <div class="tab_5">
+                    <div class="histo_1">
+                        <div class="icoin_2"><i class="fa-solid fa-download"></i></div>
+                        <div class="icoin_2"><i class="fa-solid fa-trash"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_2">
+                <div class="tab_1">
+                    <div class="histo_1">
+                        <i class="fa-solid fa-spinner"></i>
+                        Rapport_financier_trimestre.xlsx
+                    </div>
+
+                </div>
+                <div class="tab_2">Financier</div>
+                <div class="tab_3">En cours...</div>
+                <div class="tab_4">En cours</div>
+                <div class="tab_5">
+                    <div class="histo">
+                        <div class="icoin_2"><i class="fa-solid fa-download"></i> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="profil_lien" id="mika" id="close">
+        <div class="mon_profile">
+            <div class="card_users">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+                 <a href="#close">
+                    <div class="icoin_fermer">
+                    <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photo">
+                <div class="ron_im">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="changer">
+                    <h3>Changer la Photo</h3>
+                </div>
+            </div>
+
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Nom : </label><br>
+                    <input type="text" placeholder="  Administrateur" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Prénom : </label><br>
+                    <input type="text" placeholder="  Jean" class="Nom">
+                </div>
+            </div>
+            <div class="input_inscrire">
+                <div>
+                    <label for="Toutes">Email : </label><br>
+                    <input type="email" placeholder="  admin@dashboard.com" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Téléphone : </label><br>
+                    <input type="text" placeholder="+33 6 12 34 56 78" class="Nom">
+                </div>
+            </div>
+
+            <div class="role">
+                <div>
+                    <label for="Toutes">Role : </label><br>
+                    <input type="text" placeholder="  Gestionnaire" class="role1">
+                </div>
+                <div>
+                    <label for="Toutes">Derniere connexion : </label><br>
+                    <input type="text" placeholder="  15 Janvier 2024 à 14:30" class="role1">
+                </div>
+            </div>
+
+            <div class="enregistrer">
+                <div class="close">
+                    <p> Fermer</p>
+                </div>
+
+                <div class="sauve">
+                    <p>Sauvegarder</p>
+                </div>
+
+            </div>
+    </div>
+
+
+    </section>
+
+
+       
+    
+
+
+</body>
+</html>

@@ -1,0 +1,869 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F9FAFC;
+    width: 100%;
+    height: 100vh;
+}
+.entete{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 88%;
+    height: 80px;
+    margin-left: 13%;
+    padding: 30px;
+    position: fixed;
+    color: black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;;
+}
+.text {
+    font-size: 20px;
+}
+.notif_1{
+    position: relative;
+}
+.notif_1 i{
+    font-size: 1.5rem;
+
+}
+.notif_2{
+    background-color: red;
+    border-radius: 60px;
+    color: black;
+    width: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 7px;
+}
+
+.sidebar{
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    height: 100vh;
+    background-color: #1F2E43;
+    position: fixed;
+}
+span{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.bitum{
+    display: flex;
+    gap: 20px;
+}
+.notif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.admin i{
+    color: #6E7F94;
+    font-size: 20px;
+}
+.admin{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.haut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.haut_icon{
+    font-size: 30px;
+    color: blue;
+}
+.menu{
+    display: flex;
+    gap: 10px;
+}
+.menu:hover{
+    background-color: #266FED;
+    cursor: pointer;
+}
+ul{
+    margin-top: 30px;
+    color: white;
+    list-style: none;
+    line-height: 40px;
+    
+}
+ul a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+    color: white;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    gap: 20px;
+    height: 250px;
+}
+
+.nav_bas{
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    width: 220px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #303846;
+    padding: 10px;
+}
+
+.nav_bas i {
+    font-size: 30px;
+    color: #266FED;
+}
+
+.profil{
+    display: flex;
+    justify-content: start;
+    height: 50px;
+    width: 170px;
+    font-size: 14px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #303846;
+    padding: 10px;
+}
+.profil i{
+    font-size: 20px;
+}
+
+.Deconnexion{
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #3C2734;
+    padding: 10px;
+}
+.Deconnexion i{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* Bouton du menu */
+.menu-btn {
+  display: none;
+  font-size: 35px;
+  color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: -7px;
+  left:-25px;
+  z-index: 2;
+  margin-left: 2px;
+}
+/* On cache la checkbox */
+#menu-toggle {
+  display: none;
+}
+hr{
+    color: white;
+    width: 100%;
+}
+
+.main_principal{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 14%;
+    background-color: #F9FAFC;
+    padding-right: 25px;
+}
+.titre_commande p{
+    color: #8A8A9B;
+    margin-top: 15px;
+}
+.gestion{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+.carte_commande{
+    display: flex;
+    gap: 10px;
+}
+.carte_commande {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    transition: 0,3s ease all;
+}
+.carte_commande:hover{
+    transform: scaleX(1.05);
+    background-color: gray;
+}
+.icoin_commande_1{
+    font-size: 2rem;
+    color: white;
+    background-color: #F5A70B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+    
+}
+.icoin_commande_2{
+    font-size: 2rem;
+    color: white;
+    background-color: #458EF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.icoin_commande_3{
+    font-size: 2rem;
+    color: white;
+    background-color: #9666F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.icoin_commande_4{
+    font-size: 2rem;
+    color: white;
+    background-color: #10C18B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.selection{
+    display: flex;
+    margin-top: 30px;
+    gap: 40px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    align-items: center;
+   
+}
+.recherche{
+    display: flex;
+}
+.classe select{
+    width: 130px;
+    height: 30px;
+    border-radius: 7px;
+
+}
+.recherche input{
+    width: 220px;
+    height: 30px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    padding-inline: 10px;
+}
+.recherche_icoin i{
+    width: 40px;
+    height: 30px;
+    padding-inline: 10px;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.CDM{
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.CDM:hover{
+    transform: translate(1.2px);
+
+}
+.CD{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding-inline: 25px;
+}
+h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+h5{ 
+    color: #A3ACA8;
+
+}
+.iphone{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding-inline: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+}
+.tous_detail{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding-inline: 25px;
+    gap: 30px;
+}
+h6{
+    font-size: 25px;
+    font-weight: 700;
+    color: #2A6DF0;
+    text-align: end;
+}
+h3{
+    color: #2A6DF0;
+    font-size: 18px;
+}
+.tous_detail button{
+    width: 120px;
+    height: 35px;
+    border-radius: 9px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+
+}
+.tous_detail .button_bleu{
+    color: white;
+    background-color:#2A6DF0; 
+    text-decoration: none;
+}
+.tous_detail .button_expedier{
+    color: white;
+    background-color:#0DAEE9; 
+
+}
+.button_icoin i{
+    color: white;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CDM-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+}
+
+.profil_lien{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    /* background-color: #fafafb; */
+    position:absolute;
+    position: fixed;
+    backdrop-filter: blur(3px);
+}
+
+.mon_profile{
+    width: 500px;
+    height: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#mika:target{
+    left: 0;
+}
+.card_users{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    gap: 5px;
+    padding-inline: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    margin-bottom: 50px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   
+}
+.user i{
+    font-size: 1.3rem;
+}
+.photo i{
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+.changer{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    border-radius: 9px;
+    background-color:#D8D8D8;
+}
+.input_inscrire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    margin-top: 30px;
+    line-height: 2;
+}
+.input_inscrire input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+.role{
+    padding-inline: 20px;
+    margin-top: 20px;
+    line-height: 2;
+ 
+}
+.role input{
+     width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding-right: 10px;
+
+}
+.enregistrer{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding-inline: 20px;
+    margin-top: 30px;
+}
+.enregistrer .sauve{
+    width: 100px;
+    height: 35px;;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.enregistrer .close{
+    width: 100px;
+    height: 35px;;
+    color: white;
+    background-color:#D8D8D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: black;
+}
+.role1{
+    padding-right: 10px;
+}
+
+
+.commande_lien{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    position:absolute;
+    position: fixed;
+    backdrop-filter: blur(3px);
+}
+#mika_commande:target{
+    left: 0;
+}
+
+.commande_main{
+    width: 500px;
+    height: 850px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.carre_1{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding-inline: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+}
+.icoin_droit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Commande_principale{
+    margin-top: 50px;
+    padding-inline: 25px;
+}
+h4{
+    font-size: 25px;
+}
+.carre_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    gap: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mobile{
+    display: flex;
+}
+.prix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.cadre_2_mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.impression{
+    width: 500px;
+    height: 130px;
+    display: flex;
+    justify-content: end;
+    gap: 15px; 
+    padding-inline: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    margin-top: 10px;
+}
+.fermer button {
+    width: 70px;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.fermer button:hover{
+    cursor: pointer;
+}
+
+.imprimer button {
+    width: 90px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+}
+.imprimer button:hover{
+    cursor: pointer;
+}
+
+.class_commande input{
+    width: 150px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+h3{
+    font-size: 1rem;
+}
+hr{
+    border: 1px solid blue;
+}
+.class_commande .prix h2{
+    color: blue;
+    font-size: 1rem;
+}
+
+.modification_lien{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    position:absolute;
+    position: fixed;
+    backdrop-filter: blur(3px);
+}
+#mika_modification:target{
+    left: 0;
+}
+.renomer{
+    width: 500px;
+    height: 750px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.cadre_1{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding-inline: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+}
+.Commande_principale{
+    margin-top: 50px;
+    padding-inline: 25px;
+}
+.incoi_droit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icoin_fermer i:hover{
+    cursor: pointer;
+}
+.class_commande {
+    font-size: 1.2rem;
+}
+.CDM-statut select {
+    width: 450px;
+    height: 40px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.class_commande {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.CDM-date input{
+    width: 450px;
+    height: 40px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+
+}
+.impression{
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
+    padding-inline: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+}
+.Annuler button {
+    width: 70px;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.Annuler button:hover{
+    cursor: pointer;
+}
+
+.Sauvegarder button {
+    width: 110px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+}
+.Sauvegarder button:hover{
+    cursor: pointer;
+}
+.CDM-adresse textarea{
+    width: 450px;
+    height: 3OOpx;
+    border-radius: 8px;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header{
+        width: 100%;
+        margin-left: 0;
+    }
+    .sidebar{
+        left: -100%;
+        width: 250px;
+        padding-left: 10px;
+    }
+    .main_principal{
+        padding-left: 20px;
+    }
+
+ #menu-toggle:checked ~ .sidebar {
+    transform: translateX(0);
+    left: 0;
+  }
+
+  /* Le bouton s’affiche sur mobile */
+  .menu-btn {
+    display: block;
+    position: fixed;
+  }
+  .gestion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .selection{
+    padding-left: 20px;
+  }
+  .haut{
+    padding-top: 50px;
+    justify-content: start;
+  }
+
+
+    
+}
+
+
