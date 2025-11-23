@@ -102,6 +102,8 @@ span{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .haut_icon{
     font-size: 30px;
@@ -161,7 +163,7 @@ ul a{
     display: flex;
     justify-content: start;
     height: 50px;
-    width: 170px;
+    width: 220px;
     font-size: 14px;
     align-items: center;
     gap: 10px;
@@ -177,7 +179,7 @@ ul a{
     display: flex;
     justify-content: start;
     height: 40px;
-    width: 200px;
+    width: 220px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
@@ -215,11 +217,12 @@ hr{
 }
 .main_principal{
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding-top: 100px;
     padding-left: 14%;
     background-color: #F9FAFC;
     padding-right: 25px;
+    padding-bottom: 40px;
 }
 .analyse_complete{
     display: flex;
@@ -239,7 +242,8 @@ hr{
     transition: 0,3s ease all;
 }
 .analyse:hover{
-    transform: scaleX(1.05);
+   transform: translate(1.2px);
+    cursor: pointer;
     background-color: gray;
 }
 .ico_ana_1 i{
@@ -285,7 +289,7 @@ hr{
 .ico_ana_4 i{
     font-size: 2rem;
     color: white;
-    background-color: #06AE7F;
+    background-color:#EC3E3F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,6 +306,18 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+}
+.stat_2{
+    width: 55px;
+    height: 20px;
+    background-color: #FFE3E5;
+    color: red;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 .evolution_vente{
     display:flex;
@@ -311,7 +327,14 @@ hr{
 .rapport_historique_1{
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
     flex: 1.5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #F9FAFC;
+    padding-inline: 25px;
+    padding: 30px;
+
 }
 .archive_vente{
     display: flex;
@@ -331,7 +354,6 @@ hr{
 .archive_vente select{
     width: 130px;
     height: 30px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,66 +365,119 @@ hr{
     align-items: end;
     gap: 15px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+    width: 90%;
+    padding: 30px;
 }
 .jan{
     width: 40px;
     height: 40px;
     background-color: #4082E6;
+    transition: 0,3s ease all;
+}
+.jan:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
 }
 .fev{
     width: 40px;
     height: 100px;
     background-color: #4082E6;
 }
+.fev:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
+}
 .mar{
     width: 40px;
     height: 80px;
     background-color: #4082E6;
+}
+.mar:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
 }
 .avr{
     width: 40px;
     height: 130px;
     background-color: #4082E6;
 }
+.avr:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
+}
 .mai{
     width: 40px;
     height: 120px;
     background-color: #4082E6;
+}
+.mai:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
 }
 .jun{
     width: 40px;
     height: 140px;
     background-color: #4082E6;
 }
+.jun:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
+}
 .juil{
     width: 40px;
     height: 115px;
     background-color: #4082E6;
+}
+.juil:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
 }
 .aut{
     width: 40px;
     height: 180px;
     background-color: #4082E6;
 }
+.aut:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
+}
 .sep{
     width: 40px;
     height: 160px;
     background-color: #4082E6;
+}
+.sep:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
 }
 .oct{
     width: 40px;
     height: 150px;
     background-color: #4082E6;
 }
+.oct:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
+}
 .nov{
     width: 40px;
     height: 160px;
     background-color: #4082E6;
 }
+.nov:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
+}
 .dec{
     width: 40px;
     height: 170px;
     background-color: #4082E6;
+}
+.dec:hover{
+   transform: translate(1.2px);
+    cursor: pointer;
 }
 .mois{
     gap: 50px;
@@ -440,8 +515,10 @@ hr{
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* background-color: #dfe0e3;
-    border-radius: 15px; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #F9FAFC;
+    padding-inline: 25px;
+    padding: 30px;
 }
 .repartition_titre{
     display: flex;
@@ -464,17 +541,27 @@ hr{
     height: 70px;
     align-items: center;
     padding-inline: 25px;
-    background-color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
 }
 .appreil_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 20px;
+}
+
+.pourcentage{
     width: 100%;
-    height: 20px;
+    height: 5px;
     display: flex;
     justify-content: end;
     padding-inline: 25px;
-    background-color: rgb(239, 234, 234);
+    background-color: rgb(247, 226, 226);
 
 }
+
 .Tableau_rapport{
     margin-top: 40px;
 }
@@ -484,10 +571,9 @@ hr{
     align-items: center;
     width: 100%;
     height: 100px;
-    /* border: solid red; */
     padding-inline: 25px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 10px 56px -16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -544,15 +630,16 @@ hr{
 
 td{
    line-height: 50px;
-   border-bottom: solid gray;
    justify-items: center;
    align-items: center;
    text-align: center;
 }
-tr{
+tbody tr{
     transition: 0.5s ease all;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
 }
-tr:hover{
+tbody tr:hover{
     transform: scaleY(1.05);
     background-color: rgb(218, 211, 211);
 }
@@ -560,8 +647,9 @@ tr:hover{
     font-size: 0.8rem;
 }
 thead tr th {
-    height: 50px;
+    height: 70px;
     background-color: #EDEEF0;
+    
 }
 
 .profil_lien{
@@ -739,6 +827,11 @@ thead tr th {
   .haut{
     padding-top: 50px;
     justify-content: start;
+  }
+  .evolution_histogramme{
+    width: 100%;
+    gap: 6px;
+    padding: 10px;
   }
   
 }

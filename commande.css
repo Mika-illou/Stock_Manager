@@ -102,11 +102,14 @@ span{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
-.haut_icon{
+.haut_icon {
     font-size: 30px;
     color: blue;
 }
+
 .menu{
     display: flex;
     gap: 10px;
@@ -161,7 +164,7 @@ ul a{
     display: flex;
     justify-content: start;
     height: 50px;
-    width: 170px;
+    width: 220px;
     font-size: 14px;
     align-items: center;
     gap: 10px;
@@ -177,7 +180,7 @@ ul a{
     display: flex;
     justify-content: start;
     height: 40px;
-    width: 200px;
+    width: 220px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
@@ -191,13 +194,6 @@ a{
     text-decoration: none;
     color: black;
 }
-
-
-
-
-
-
-
 
 /* Bouton du menu */
 .menu-btn {
@@ -217,18 +213,17 @@ a{
 #menu-toggle {
   display: none;
 }
-hr{
-    color: white;
-    width: 100%;
-}
+
 
 .main_principal{
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding-top: 100px;
     padding-left: 14%;
-    background-color: #F9FAFC;
+     background-color: #F9FAFC;
     padding-right: 25px;
+    padding-bottom: 40px;
+   
 }
 .titre_commande p{
     color: #8A8A9B;
@@ -255,8 +250,8 @@ hr{
     transition: 0,3s ease all;
 }
 .carte_commande:hover{
-    transform: scaleX(1.05);
-    background-color: gray;
+    transform: translate(1.2px);
+    cursor: pointer;
 }
 .icoin_commande_1{
     font-size: 2rem;
@@ -703,7 +698,7 @@ h3{
     font-size: 1rem;
 }
 hr{
-    border: 1px solid blue;
+    width: 100%;
 }
 .class_commande .prix h2{
     color: blue;

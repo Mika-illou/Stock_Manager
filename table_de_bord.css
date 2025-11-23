@@ -20,12 +20,13 @@ body{
     justify-content: start;
     width: 88%;
     height: 80px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     margin-left: 13%;
     padding: 30px;
     position: fixed;
     color: black;
-    box-shadow: 0px 10px 56px -16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
 }
 .text {
     font-size: 20px;
@@ -98,8 +99,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .haut_icon i {
     font-size: 30px;
@@ -160,7 +161,7 @@ ul a{
     display: flex;
     justify-content: start;
     height: 50px;
-    width: 170px;
+    width: 220px;
     font-size: 14px;
     align-items: center;
     gap: 10px;
@@ -176,7 +177,7 @@ ul a{
     display: flex;
     justify-content: start;
     height: 40px;
-    width: 200px;
+    width: 220px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
@@ -215,10 +216,6 @@ a{
 }
 
 .main_principal{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     width: 100%;
     height: 100vh;
     padding-top: 100px;
@@ -253,13 +250,17 @@ a{
     gap: 15px;
     padding: 30px;
     border-radius: 15px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 10px 56px -16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
     transition: 0,3s ease all;
 }
 .carte:hover{
-    transform: scaleX(1.05);
-    background-color: gray;
+    transform: translate(1.2px);
+    cursor: pointer;
+}
+.carte1 .span_num{
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .icoin1{
@@ -314,8 +315,9 @@ a{
     width: 100%;
     height: 100px;
     padding: 30px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 10px 56px -16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
+   
    border-top-left-radius: 8px;
    border-top-right-radius: 8px;
 }
@@ -359,28 +361,50 @@ input{
 }
 th{
    line-height: 50px;
-   border-bottom: solid gray;
+   /* border-bottom: solid gray; */
    justify-items: center;
    align-items: center;
 }
-tr{
+tbody tr{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box;
     transition: 0.5s ease all;
+    
 }
-tr:hover{
-    transform: scaleY(1.05);
-    background-color: rgb(218, 211, 211);
+tbody tr:hover{
+    transform: translate(1.2px);
+    cursor: pointer;
+    background-color: #DFE0E1;
 }
 .entete_colonne{
-    height: 50px;
+    height: 80px;
     width: 100%;
     text-align: start;
     background-color: #DFE0E1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .cards{
     display: flex;
     gap: 10px;
     padding-left: 30%;
 }
+.cards .carte1 {
+    line-height: 40px;
+   
+}
+.cards .carte1 h4{
+    color: #A19E9F;
+    text-align: start;
+    font-size: 16px;
+   
+}
+.cards i{
+    font-size: 0.9rem;
+}
+.cards .carte1 h3{
+    font-size: 17px;
+}
+
 
 .ico{
     font-size: 1.2rem;
@@ -643,20 +667,16 @@ tr:hover{
 }
 
 
-
-
-
-
-
 @media (max-width: 768px) {
-.entete .header{
-        width: 92%;
+    .entete .header{
+        width: 93%;
         padding: 0;
         /* margin: 30px; */
         gap: 10px;
         margin-left: 40px;
-        
+        padding-inline: 10px; 
     }
+
     .sidebar{
         left: -100%;
         width: 260px;
@@ -667,36 +687,42 @@ tr:hover{
      
     }
 
- #menu-toggle:checked ~ .sidebar {
+    #menu-toggle:checked ~ .sidebar {
     transform: translateX(0);
     left: 0;
  
-  }
+    }
  
   /* Le bouton s’affiche sur mobile */
-  .menu-btn {
+   .menu-btn {
     display: block;
     position: fixed;
-  }
+   }
   .gestion_produit{
     display:grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .haut{
+   }
+   .haut{
     padding-top: 30px;
     justify-content: start;
-  }
-  .haut_icon{
+   }
+   .haut_icon{
     padding: 0;
   }
   .ajout_produit{
     gap: 10px;
   }
-
-
-
-
-    
+  .cards .carte1 {
+    font-size: 8px;  
+  }
+  .cards .carte1 h4{
+    font-size: 10px;
 }
-
+.cards i{
+    font-size: 0.4rem;
+}
+.cards .carte1 h3{
+    font-size: 12px;
+}
+}
 
