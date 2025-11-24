@@ -48,6 +48,7 @@ body{
     align-items: center;
     position: absolute;
     margin-bottom: 7px;
+    cursor: pointer;
 }
 
 .sidebar{
@@ -115,8 +116,12 @@ span{
     gap: 10px;
 }
 .menu:hover{
-    background-color: #266FED;
+    background-color: #646c7b;
     cursor: pointer;
+}
+#menu{
+    background-color: #266FED;
+
 }
 ul{
     margin-top: 30px;
@@ -154,6 +159,7 @@ ul a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
     
 }
 .nav_bas p{
@@ -176,11 +182,14 @@ ul a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
 }
 .profil i{
     font-size: 20px;
 }
-
+.profil:hover{
+    background-color: rgba(119, 115, 115, 0.588);
+}
 .Deconnexion{
     display: flex;
     justify-content: start;
@@ -191,9 +200,13 @@ ul a{
     border-radius: 10px;
     background-color: #3C2734;
     padding: 10px;
+    color: white;
 }
 .Deconnexion i{
     font-size: 20px;
+}
+.Deconnexion:hover{
+    background-color: rgba(200, 22, 22, 0.525);
 }
 a{
     text-decoration: none;
@@ -208,7 +221,7 @@ a{
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-  top: -7px;
+  top: -4px;
   left:-25px;
   z-index: 2;
   margin-left: 2px;
@@ -266,16 +279,16 @@ hr{
     align-items: center;
     justify-content: space-between;
     padding-inline: 25px;
-     border-radius: 10px;
+    border-radius: 10px;
     gap: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(white) padding-box;
 }
 .notification_1:hover{
     border: 1px solid blue;
     cursor: pointer;
     border-radius: 10px;
-    background-color: #DCDDDE;
+    background-color:#E3E0E0; 
+    box-shadow: 0 4px 15px#E3E0E0;
 }
 
 .main_principal p{
@@ -302,10 +315,15 @@ hr{
     width: 130px;
     height: 40px;
     border-radius: 9px;
+    cursor: pointer;
 }
 .voir_button{
     background-color: #0DAEEA;
     color: white;
+}
+.voir_button:hover{
+    background-color: #49c6f3;
+    cursor: pointer;
 }
 .cadre_2_parametre{
     display: flex;
@@ -372,6 +390,10 @@ hr{
     align-items: center;
     border-radius: 8px;
 }
+.systme_1:hover{
+    background-color: #4a84ef;
+    cursor: pointer;
+}
 .systme_2{
     background-color: #e2e0e0;
     color: black;
@@ -379,6 +401,7 @@ hr{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    cursor: pointer;
 }
 .systme_3{
     background-color: #BDBDBD;
@@ -387,6 +410,7 @@ hr{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+     cursor: pointer;
 }
 .systme_4{
     background-color: #BDBDBD;
@@ -395,6 +419,7 @@ hr{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .profil_lien{
@@ -551,6 +576,8 @@ hr{
     }
     .main_principal{
         padding-left: 70px;
+        padding: 0;
+        padding-inline: 20px;
     }
 
  #menu-toggle:checked ~ .sidebar {
@@ -566,6 +593,9 @@ hr{
   .notification{
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .notification_1{
+    width: 100%;
   }
   .systeme{
     display: flex;

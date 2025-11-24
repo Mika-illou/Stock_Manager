@@ -48,6 +48,7 @@ body{
     align-items: center;
     position: absolute;
     margin-bottom: 7px;
+    cursor: pointer;
 }
 
 .sidebar{
@@ -115,8 +116,12 @@ span{
     gap: 10px;
 }
 .menu:hover{
-    background-color: #266FED;
+    background-color: #646c7b;
     cursor: pointer;
+}
+#menu{
+    background-color: #266FED;
+
 }
 ul{
     margin-top: 30px;
@@ -153,6 +158,7 @@ ul a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
 }
 
 .nav_bas i {
@@ -171,11 +177,14 @@ ul a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
 }
 .profil i{
     font-size: 20px;
 }
-
+.profil:hover{
+    background-color: rgba(119, 115, 115, 0.588);
+}
 .Deconnexion{
     display: flex;
     justify-content: start;
@@ -186,9 +195,13 @@ ul a{
     border-radius: 10px;
     background-color: #3C2734;
     padding: 10px;
+    color: white;
 }
 .Deconnexion i{
     font-size: 20px;
+}
+.Deconnexion:hover{
+    background-color: rgba(200, 22, 22, 0.525);
 }
 a{
     text-decoration: none;
@@ -204,7 +217,7 @@ a{
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-  top: -7px;
+  top: -4px;
   left:-25px;
   z-index: 2;
   margin-left: 2px;
@@ -250,7 +263,7 @@ a{
     transition: 0,3s ease all;
 }
 .carte_commande:hover{
-    transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .icoin_commande_1{
@@ -346,7 +359,8 @@ a{
     border-radius: 15px;
 }
 .CDM:hover{
-    transform: translate(1.2px);
+    transform: translatey(-4px);
+    cursor: pointer;
 
 }
 .CD{
@@ -373,8 +387,7 @@ h5{
     height: 80px;
     align-items: center;
     padding-inline: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(white) padding-box;
+   background-color: #e2dfdf;
 }
 .tous_detail{
     display: flex;
@@ -403,6 +416,7 @@ h3{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
     
 
 }
@@ -411,10 +425,19 @@ h3{
     background-color:#2A6DF0; 
     text-decoration: none;
 }
+.tous_detail .button_bleu:hover{
+    background-color:#487fee;
+    cursor: pointer;
+}
+
 .tous_detail .button_expedier{
     color: white;
     background-color:#0DAEE9; 
 
+}
+.tous_detail .button_expedier:hover{
+    background-color:#66c4e6;
+    cursor: pointer;
 }
 .button_icoin i{
     color: white;
@@ -426,6 +449,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .CDM-3{
     display: flex;
@@ -855,6 +879,15 @@ hr{
   .haut{
     padding-top: 50px;
     justify-content: start;
+  }
+  .selection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 250px;
+    #Toutes {
+        width: 650px;
+    }
   }
 
 

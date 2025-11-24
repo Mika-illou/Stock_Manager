@@ -48,6 +48,7 @@ body{
     align-items: center;
     position: absolute;
     margin-bottom: 7px;
+    cursor: pointer;
 }
 
 .sidebar{
@@ -114,8 +115,12 @@ span{
     gap: 10px;
 }
 .menu:hover{
-    background-color: #266FED;
+    background-color: #646c7b;
     cursor: pointer;
+}
+#menu{
+    background-color: #266FED;
+
 }
 ul{
     margin-top: 30px;
@@ -156,6 +161,7 @@ a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
 }
 
 .nav_bas i {
@@ -174,11 +180,14 @@ a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
 }
 .profil i{
     font-size: 20px;
 }
-
+.profil:hover{
+    background-color: rgba(119, 115, 115, 0.588);
+}
 .Deconnexion{
     display: flex;
     justify-content: start;
@@ -189,13 +198,16 @@ a{
     border-radius: 10px;
     background-color: #3C2734;
     padding: 10px;
+    color: white;
 }
 .Deconnexion i{
     font-size: 20px;
 }
 
 
-
+.Deconnexion:hover{
+    background-color: rgba(200, 22, 22, 0.525);
+}
 
 
 
@@ -210,7 +222,7 @@ a{
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-  top: -7px;
+  top: -4px;
   left:-25px;
   z-index: 2;
   margin-left: 2px;
@@ -255,7 +267,7 @@ hr{
     transition: 0,3s ease all;
 }
 .carte_noti:hover{
-    transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
   
 }
@@ -334,6 +346,10 @@ hr{
     align-items: center;
     gap: 8px;
 }
+.icoin_fitrer:hover{
+    background-color: #6799f0;
+    cursor: pointer;
+}
 .classe_noti{
     line-height: 2;
 }
@@ -358,7 +374,7 @@ hr{
     linear-gradient(to right, #ff6b6b, #45b7d1, #45b7d1,#f9ca24) border-box !important;
 }
 .com_1:hover{
-    transform: translate(11.2px);
+    transform: translatey(-4px);
   
 }
 .made_com{
@@ -396,6 +412,7 @@ hr{
     align-items: center;;
     border-radius: 9px;
     background-color:#EFF2F5;
+    cursor: pointer;
 }
 .pass_com_2{
     width: 180px;
@@ -405,6 +422,7 @@ hr{
     justify-content: center;
     align-items: center;;
     border-radius: 9px; ;
+    cursor: pointer;
 }
 .com_2 {
     width: 100%;
@@ -413,7 +431,6 @@ hr{
     gap: 25px;
     padding: 30px;
     border-radius: 15px;
-    transition: 0,3s ease all;
     margin-top: 30px;
     border: 4px solid transparent;
     border-bottom:none;
@@ -427,7 +444,7 @@ hr{
     linear-gradient(to right, #2A6AE0, #45b7d1, #45b7d1,#f9ca24) border-box !important;
 }
 .com_2:hover{
-    transform: translate(11.2px);
+    transform: translatey(-4px);
   
 }
 .made_com{
@@ -466,6 +483,7 @@ hr{
     border-radius: 9px;
     background-color:#2A6AE0;
     color: white;
+    cursor: pointer;
 }
 .pass_com_4{
     width: 180px;
@@ -475,6 +493,7 @@ hr{
     justify-content: center;
     align-items: center;;
     border-radius: 9px; ;
+    cursor: pointer;
 }
 .com_3 {
     width: 100%;
@@ -490,7 +509,7 @@ hr{
     transition: 0,3s ease all;
 }
 .com_3:hover{
-    transform: translate(11.2px);
+    transform: translatey(-4px);
   
 }
 .made_com{
@@ -529,6 +548,7 @@ hr{
     border-radius: 9px;
     background-color:#60C5F0;
     color: white;
+    cursor: pointer;
 }
 .com_4 {
     width: 100%;
@@ -545,7 +565,7 @@ hr{
     transition: 0,3s ease all;
 }
 .com_4:hover{
-    transform: translate(11.2px);
+   transform: translatey(-4px);
   
 }
 .made_com{
@@ -584,6 +604,7 @@ hr{
     align-items: center;;
     border-radius: 9px;
     background-color:whitesmoke;
+    cursor: pointer;
 }
 .com_5 {
     width: 100%;
@@ -601,7 +622,7 @@ hr{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .com_5:hover{
-    transform: translate(11.2px);
+    transform: translatey(-4px);
   
 }
 .made_com{
@@ -640,6 +661,7 @@ hr{
     align-items: center;;
     border-radius: 9px;
     background-color:#D8D8D8;
+    cursor: pointer;
 }
 
 .com_6 {
@@ -660,7 +682,7 @@ hr{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .com_6:hover{
-    transform: translate(11.2px);
+    transform: translatey(-4px);
 }
 .pass_marque{
     display: flex;
@@ -668,6 +690,9 @@ hr{
     align-items: center;
     gap: 10px;
     }
+.com_6 .selecte_com input{
+    cursor: pointer;
+}
 
 .pass_marque{
     width: 220px;
@@ -677,6 +702,7 @@ hr{
     align-items: center;;
     border-radius: 9px;
     background-color:#EFF2F5;
+    cursor: pointer;
 }
 .icoin_supp{
     display: flex;
@@ -693,6 +719,7 @@ hr{
     align-items: center;;
     border-radius: 9px;
     background-color:#EFF2F5;
+    cursor: pointer;
 }
 
 
@@ -850,6 +877,7 @@ hr{
     }
     .main_principal{
         padding-left: 20px;
+    
     }
 
  #menu-toggle:checked ~ .sidebar {
@@ -899,6 +927,13 @@ hr{
   .haut{
     padding-top: 50px;
     justify-content: start;
+  }
+  .com_2, .com_3, .com_4{
+    padding-left: 100px;
+  }
+  .made_pass{
+    justify-content: start;
+    align-content: start;
   }
 
 

@@ -48,6 +48,7 @@ body{
     align-items: center;
     position: absolute;
     margin-bottom: 7px;
+    cursor: pointer;
 }
 
 .sidebar{
@@ -114,8 +115,12 @@ span{
     gap: 10px;
 }
 .menu:hover{
-    background-color: #266FED;
+    background-color: #646c7b;
     cursor: pointer;
+}
+#menu{
+    background-color: #266FED;
+
 }
 ul{
     margin-top: 30px;
@@ -152,6 +157,7 @@ ul a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
 }
 
 .nav_bas i {
@@ -170,11 +176,14 @@ ul a{
     border-radius: 10px;
     background-color: #303846;
     padding: 10px;
+    color: white;
 }
 .profil i{
     font-size: 20px;
 }
-
+.profil:hover{
+    background-color: rgba(119, 115, 115, 0.588);
+}
 .Deconnexion{
     display: flex;
     justify-content: start;
@@ -185,9 +194,13 @@ ul a{
     border-radius: 10px;
     background-color: #3C2734;
     padding: 10px;
+    color: white;
 }
 .Deconnexion i{
     font-size: 20px;
+}
+.Deconnexion:hover{
+    background-color: rgba(200, 22, 22, 0.525);
 }
 a{
     text-decoration: none;
@@ -202,7 +215,7 @@ a{
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-  top: -7px;
+  top: -4px;
   left:-25px;
   z-index: 2;
   margin-left: 2px;
@@ -242,7 +255,7 @@ hr{
     transition: 0,3s ease all;
 }
 .analyse:hover{
-   transform: translate(1.2px);
+   transform: translatey(-2px);
     cursor: pointer;
     background-color: gray;
 }
@@ -373,110 +386,122 @@ hr{
 .jan{
     width: 40px;
     height: 40px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
     transition: 0,3s ease all;
 }
 .jan:hover{
-   transform: translate(1.2px);
+   transform: translatey(-2px);
     cursor: pointer;
 }
 .fev{
     width: 40px;
     height: 100px;
-    background-color: #4082E6;
+   background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .fev:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .mar{
     width: 40px;
     height: 80px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .mar:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .avr{
     width: 40px;
     height: 130px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .avr:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .mai{
     width: 40px;
     height: 120px;
-    background-color: #4082E6;
+   background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .mai:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .jun{
     width: 40px;
     height: 140px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .jun:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .juil{
     width: 40px;
     height: 115px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .juil:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .aut{
     width: 40px;
     height: 180px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .aut:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .sep{
     width: 40px;
     height: 160px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .sep:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .oct{
     width: 40px;
     height: 150px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .oct:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .nov{
     width: 40px;
     height: 160px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .nov:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .dec{
     width: 40px;
     height: 170px;
-    background-color: #4082E6;
+    background: linear-gradient(180deg,rgba(63, 131, 230, 0.6) 10%, rgba(63, 131, 230, 0.87) 44%);
+    border-radius: 5px 5px 0 0;
 }
 .dec:hover{
-   transform: translate(1.2px);
+    transform: translatey(-2px);
     cursor: pointer;
 }
 .mois{
@@ -640,7 +665,6 @@ tbody tr{
     background: linear-gradient(white) padding-box;
 }
 tbody tr:hover{
-    transform: scaleY(1.05);
     background-color: rgb(218, 211, 211);
 }
 .carte1 h3{
@@ -660,7 +684,6 @@ thead tr th {
     height: 100vh;
     top: 0;
     left: -100%;
-    /* background-color: #fafafb; */
     position:absolute;
     position: fixed;
     backdrop-filter: blur(3px);
@@ -833,7 +856,12 @@ thead tr th {
     gap: 6px;
     padding: 10px;
   }
+  .top_produit{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
   
 }
-
+}
 

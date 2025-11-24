@@ -72,7 +72,7 @@ Ce projet a été conçu pour :
   Font Awesome:Icônes
 
 
-## ▶️ Démarrage du Projet
+## Démarrage du Projet
 
 ### Installation
 
@@ -82,10 +82,7 @@ git clone https://github.com/votre-repo/stock-manager.git
 
 Le projet s'adapte automatiquement :
 
--   Mobile (\<768px)
--   Tablette (768--1024px)
--   Desktop (\>1024px)
-
+-   Mobile (768px)
 
 ## Conclusion
 
