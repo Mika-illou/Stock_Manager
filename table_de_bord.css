@@ -153,7 +153,7 @@ ul a{
     display: flex;
     justify-content: start;
     height: 100px;
-    width: 220px;
+    width: 240px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
@@ -171,7 +171,7 @@ ul a{
     display: flex;
     justify-content: center;
     height: 50px;
-    width: 220px;
+    width: 240px;
     font-size: 14px;
     align-items: center;
     gap: 10px;
@@ -191,7 +191,7 @@ ul a{
     display: flex;
     justify-content: center;
     height: 40px;
-    width: 220px;
+    width: 240px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
