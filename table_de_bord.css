@@ -129,13 +129,11 @@ ul{
     color: white;
     list-style: none;
     line-height: 40px;
-    
 }
 ul a{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 700;
-    
     color: white;
 }
 
@@ -202,12 +200,9 @@ ul a{
 .Deconnexion:hover{
     background-color: rgba(200, 22, 22, 0.525);
 }
-
-
 .Deconnexion i{
     font-size: 20px;
 }
-
 /* Bouton du menu */
 .menu-btn {
   display: none;
@@ -248,7 +243,6 @@ a{
 }
 .titre_table_de_bord {
    color: #000000;
-   
 }
 .p_table{
     color: #948389;
@@ -291,7 +285,6 @@ a{
     align-items: center;
     padding: 0.5rem;
     border-radius: 15px;
-    
 }
 .icoin2{
     font-size: 2rem;
@@ -326,8 +319,8 @@ a{
 .gestion_stocks{
     display: flex;
     flex-direction: column;
-    
 }
+
 .titre_tableau{
     display: flex;
     justify-content: space-between;
@@ -336,7 +329,6 @@ a{
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     background: linear-gradient(white) padding-box;
-   
    border-top-left-radius: 8px;
    border-top-right-radius: 8px;
 }
@@ -348,7 +340,6 @@ a{
 .ajout_produit{
     display: flex;
     gap: 30px;
-    
 }
 .export{
     width: 100px;
@@ -388,7 +379,6 @@ input{
 }
 th{
    line-height: 50px;
-   /* border-bottom: solid gray; */
    justify-items: center;
    align-items: center;
 }
@@ -396,7 +386,6 @@ tbody tr{
     border-bottom: 1px solid #F3F4F6;
     background-color: #fff;
     transition: 0.5s ease all;
-    
 }
 tbody tr:hover{
     background-color: #F3F4F6;
@@ -416,13 +405,11 @@ tbody tr:hover{
 }
 .cards .carte1 {
     line-height: 40px;
-   
 }
 .cards .carte1 h4{
     color: #A19E9F;
     text-align: start;
     font-size: 16px;
-   
 }
 .cards i{
     font-size: 0.9rem;
@@ -430,7 +417,6 @@ tbody tr:hover{
 .cards .carte1 h3{
     font-size: 17px;
 }
-
 
 .ico{
     font-size: 1.2rem;
@@ -471,7 +457,6 @@ tbody tr:hover{
     height: 30px;
     background-color: #DEFDED;
     border-radius: 15px;
-
 }
 .AUDIO{
     display: flex;
@@ -481,7 +466,6 @@ tbody tr:hover{
     height: 30px;
     background-color: #EFE7C3;
     border-radius: 15px;
-
 }
 .TABLETTE{
     display: flex;
@@ -491,7 +475,6 @@ tbody tr:hover{
     height: 30px;
     background-color: #C4C5D8;
     border-radius: 15px;
-
 }
 .TV{
      display: flex;
@@ -519,7 +502,6 @@ tbody tr:hover{
     height: 30px;
     background-color: #FFF5CF;
     border-radius: 15px;
-
 }
 .P3{
     display: flex;
@@ -529,7 +511,6 @@ tbody tr:hover{
     height: 30px;
     background-color: #F0D7DB;
     border-radius: 15px;
-
 }
 .actif{
     display: flex;
@@ -550,11 +531,7 @@ tbody tr:hover{
     background-color:#F2E7C4;
     border-radius: 15px;
     color: #605859;
-
 }
-
-
-
 .profil_lien{
     display: flex;
     align-items: center;
@@ -568,7 +545,6 @@ tbody tr:hover{
     position: fixed;
     backdrop-filter: blur(3px);
 }
-
 .mon_profile{
     width: 500px;
     height: 800px;
@@ -607,7 +583,6 @@ tbody tr:hover{
     justify-content: center;
     align-items: center;
     gap: 25px;
-   
 }
 .user i{
     font-size: 1.3rem;
@@ -657,7 +632,6 @@ tbody tr:hover{
     height: 30px;
     border-radius: 5px;
     padding-right: 10px;
-
 }
 .enregistrer{
     display: flex;
@@ -710,13 +684,10 @@ tbody tr:hover{
     }
     .main_principal{
         padding-left: 20px;
-     
     }
-
     #menu-toggle:checked ~ .sidebar {
     transform: translateX(0);
     left: 0;
- 
     }
  
   /* Le bouton s’affiche sur mobile */

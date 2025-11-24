@@ -76,7 +76,9 @@ Ce projet a été conçu pour :
 
 ### Installation
 
-git clone https://github.com/votre-repo/stock-manager.git
+git clone https://github.com/Mika-illou/Stock_Manager.git
+
+GitHub Page : https://mika-illou.github.io/Stock_Manager/
 
 ## Adaptation Mobile
 
