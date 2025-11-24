@@ -168,10 +168,6 @@ ul a{
     color: white;
     
 }
-.nav_bas p{
-    color: black;
-}
-
 .nav_bas i {
     font-size: 30px;
     color: #266FED;
@@ -577,7 +573,7 @@ hr{
     }
     .sidebar{
         left: -100%;
-        width: 250px;
+        width: 280px;
         padding-left: 10px;
     }
     .main_principal{
